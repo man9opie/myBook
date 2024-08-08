@@ -1,5 +1,5 @@
 //
-//  WaterfallVCCollectionViewController.swift
+//  WaterfallVC.swift
 //  myBook
 //
 //  Created by Andy Chen on 8/6/24.
@@ -7,12 +7,18 @@
 
 import UIKit
 
+private let reuseIdentifier = "Cell"
 
-class WaterfallVCCollectionViewController: UICollectionViewController {
+class WaterfallVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Register cell classes
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -41,7 +47,7 @@ class WaterfallVCCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
         // Configure the cell
     
