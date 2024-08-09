@@ -8,5 +8,7 @@
 import UIKit
 
 class WaterfallCell: UICollectionViewCell {
+    @IBOutlet weak var imageview: UIImageView!
+    
     
 }

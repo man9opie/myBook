@@ -1,26 +1,23 @@
 //
-//  WaterfallVC.swift
+//  WaterfallVCCollectionViewController.swift
 //  myBook
 //
 //  Created by Andy Chen on 8/6/24.
 //
 
 import UIKit
+import CHTCollectionViewWaterfallLayout
 
-private let reuseIdentifier = "Cell"
-
-class WaterfallVC: UICollectionViewController {
-
+class WaterfallVC: UICollectionViewController{
+        
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        
+        let layout = collectionView.collectionViewLayout as! CHTCollectionViewWaterfallLayout
+        layout.columnCount = 2
+        
     }
 
     /*
@@ -37,20 +34,22 @@ class WaterfallVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 11
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kWaterfallCellID, for: indexPath) as! WaterfallCell
     
+        cell.imageview.image = UIImage(named:"\(indexPath.item + 1)")
         // Configure the cell
-    
+        
+        
         return cell
     }
 
@@ -85,4 +84,13 @@ class WaterfallVC: UICollectionViewController {
     }
     */
 
+}
+
+
+
+
+extension WaterfallVC: CHTCollectionViewDelegateWaterfallLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        UIImage(named:"\(indexPath.item + 1)")!.size
+    }
 }

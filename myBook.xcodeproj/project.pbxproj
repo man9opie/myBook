@@ -13,7 +13,8 @@
 		E60B491F2C5741E50026AEFF /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B491E2C5741E50026AEFF /* DiscoveryVC.swift */; };
 		E60B49212C5741F00026AEFF /* NearbyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B49202C5741F00026AEFF /* NearbyVC.swift */; };
 		E60B49232C5743820026AEFF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B49222C5743820026AEFF /* Constants.swift */; };
-		E60B49272C61EB3E0026AEFF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B49262C61EB3E0026AEFF /* WaterfallVC.swift */; };
+		E60B492B2C61FCCD0026AEFF /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B492A2C61FCCD0026AEFF /* WaterfallCell.swift */; };
+		E60B492F2C6208060026AEFF /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60B492E2C6208060026AEFF /* WaterfallVC.swift */; };
 		E6939C172C4CF2900041772D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6939C162C4CF2900041772D /* AppDelegate.swift */; };
 		E6939C192C4CF2900041772D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6939C182C4CF2900041772D /* SceneDelegate.swift */; };
 		E6939C1E2C4CF2900041772D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E6939C1D2C4CF2900041772D /* Base */; };
@@ -30,7 +31,8 @@
 		E60B491E2C5741E50026AEFF /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		E60B49202C5741F00026AEFF /* NearbyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyVC.swift; sourceTree = "<group>"; };
 		E60B49222C5743820026AEFF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E60B49262C61EB3E0026AEFF /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		E60B492A2C61FCCD0026AEFF /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		E60B492E2C6208060026AEFF /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		E6939C132C4CF2900041772D /* myBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6939C162C4CF2900041772D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6939C182C4CF2900041772D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 				E6939C162C4CF2900041772D /* AppDelegate.swift */,
 				E6939C182C4CF2900041772D /* SceneDelegate.swift */,
 				E6939C1C2C4CF2900041772D /* Main.storyboard */,
-				E60B49262C61EB3E0026AEFF /* WaterfallVC.swift */,
+				E60B492E2C6208060026AEFF /* WaterfallVC.swift */,
+				E60B492A2C61FCCD0026AEFF /* WaterfallCell.swift */,
 				E60B49252C5749160026AEFF /* Home */,
 				E60B49222C5743820026AEFF /* Constants.swift */,
 				E6939C1F2C4CF2920041772D /* Assets.xcassets */,
@@ -230,8 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60B491F2C5741E50026AEFF /* DiscoveryVC.swift in Sources */,
+				E60B492F2C6208060026AEFF /* WaterfallVC.swift in Sources */,
 				E60B491B2C55E7E50026AEFF /* HomeVC.swift in Sources */,
-				E60B49272C61EB3E0026AEFF /* WaterfallVC.swift in Sources */,
+				E60B492B2C61FCCD0026AEFF /* WaterfallCell.swift in Sources */,
 				E60B491D2C5741D60026AEFF /* FollowVC.swift in Sources */,
 				E6939C172C4CF2900041772D /* AppDelegate.swift in Sources */,
 				E60B49232C5743820026AEFF /* Constants.swift in Sources */,

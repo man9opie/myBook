@@ -15,7 +15,10 @@ class DiscoveryVC: ButtonBarPagerTabStripViewController,IndicatorInfoProvider {
         // Do any additional setup after loading the view.
     }
     
-
+    /*func viewControllersForPagerTabStrip(_ pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
+        
+    }*/
+    
     func indicatorInfo(for pagerTabStripController: XLPagerTabStrip.PagerTabStripViewController) -> XLPagerTabStrip.IndicatorInfo {
         IndicatorInfo(title:"New")
     }
